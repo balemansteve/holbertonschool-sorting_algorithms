@@ -19,7 +19,7 @@ void insertion_sort_list(listint_t **list)
 	while (aux)
 	{
 		node = aux;
-		while ((node->n < node->prev->n) && node->prev)
+		while (node->prev && (node->n < node->prev->n))
 		{
 			pos = node->prev;
 
